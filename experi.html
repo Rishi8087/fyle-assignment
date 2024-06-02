@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Inverted Comma Border</title>
+<style>
+    .text-with-quote {
+        position: relative;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        padding-left: 20px; /* Adjust padding to create space for the quote border */
+    }
+    .text-with-quote::before {
+        content: '"';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: 20px;
+        height: 40px;
+        border-left: 4px solid blue; /* Blue border representing the quote */
+        border-bottom: 4px solid blue;
+       
+    }
+</style>
+</head>
+<body>
+
+<div class="text-with-quote">This is a sample text with a blue inverted comma before it.</div>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+
+body{
+    background-color: #FAFAFA !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.small-heading{
+    color:#FF3147;
+}
+
+ .right img{
+    width:100%;
+    height:100%;
+}
+
+.button{
+    border:none;
+    background-color: #FF3147 ;
+    padding: 4px 20px;
+    border-radius: 2px;
+    color: white;
+}
+
+.my{
+    margin-top: 80px;
+}
+
+.what-we-do{
+    margin: 8rem 0!important;
+}
+
+.slick-slide {
+    margin: 0 10px; /* Adjust the margin as needed */
+    position: relative; /* For positioning the overlay */
+}
+.slick-list {
+    margin: 0 -10px; /* Adjust the margin to balance the overall width */
+}
+.slick-dots {
+    text-align: left;
+}
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+.slider .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF3147; /* Orange with opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.slider .slide:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.overlay {
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+.overlay .button {
+    background-color: white;
+    color: #FF3147;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.overlay .button .arrow {
+    margin-left: 10px;
+}
+
+/*---------------------*/
+
+ .slider-container {
+            width: 100%;
+            margin: auto;
+        }
+        .slick-dots {
+            text-align: left;
+        }
+        .slick-slide {
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+        .slick-list {
+            margin: 0 -10px; /* Adjust the margin to balance the overall width */
+        }
+        .slick-dots {
+            text-align: left;
+        }
+
+        .slick-dots li.slick-active button:before{
+            color:#FF3147;;
+        }
+
+
+        .slick-dots li.slick-active button {
+            border-radius: 50%;
+            border: 2px solid #FF3147;
+        }
+
+        /*-------------why choose us------*/
+
+        .why-choose-us{
+            margin-top: 8rem !important;
+        }
+
+        .choose-details{
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        
+        }
+
+        .choose-details i{
+            font-size: 35px;
+            margin-bottom: 1rem;
+        }
+
+        /*-----our project----*/
+
+        .our-project{
+            margin-top: 8rem !important;
+        }
+
+        .project-details{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left img{
+            width:450px;
+            height: 400px;
+            display: block;
+            margin:auto;
+        }
+
+        .first:hover, .second:hover, .third:hover{
+            background-color: #FF3147  !important;
+            color: white;
+        }
+
+        /*-----experts-growths----*/
+
+        .experts-growths{
+            margin: 8rem 0 !important;
+        }
+
+        .growth-details{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .growth-details div{
+            width: 270px;
+            height:200px;
+        }
+
+        .growth-details i{
+            font-size: 30px;
+            margin-bottom: 0.5rem;
+            color:#FF3147;
+        }
+
+        .growth-details .font{
+            font-size: 40px;
+        }
+
+        .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover{
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(9, 5, 5, 0.267);
+        }
+
+    /*----client feedback----*/
+
+    /*----footer----*/
+   
+    footer{
+        background-color: #FF3147;
+        width:100% !important;
+        height: 190px !important;
+        margin-top: 6rem;
+        display:flex;
+justify-content: center;
+align-items: center;
+    }
+
+    .inner-footer img{
+        width: 100px;
+    }
+
+    .inner-footer{
+        width:90%;
+display:flex;
+justify-content: space-around;
+align-items: center;
+    }
+
+/*---- COntact----*/
+
+
+
+.form-row{
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.popup-form .form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+.popup-form input[type="text"], .popup-form input[type="email"] {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+}
+
+.popup-form label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.popup-form input:focus + label,
+.popup-form input:not(:placeholder-shown) + label {
+    top: -15px;
+    color: #CCCCCC
+}
+.popup-form input:placeholder-shown + label {
+    color: #ccc;
+}
+
+.popup-form .submit-btn {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 10px 20px;
+    background-color:#FF3147;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-form .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.popup-form .terms input {
+    margin-right: 10px;
+}
+
+.form-check-label{
+    margin-left: 25px;
+    color:#717685;
+}
